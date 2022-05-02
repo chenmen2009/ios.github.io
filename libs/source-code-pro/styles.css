@@ -14,3 +14,31 @@
   src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(fonts/mrl8jkM18OlOQN8JLgasD9V_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+.bilibili {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+   trans
+}
+
+@media only screen and (max-width: 767px) {
+    .bilibili {height: 15em;max-width: 25em;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bilibili {height: 20em;max-width: 30em;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bilibili {height: 30em;max-width: 40em;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .bilibili {height: 40em;max-width: 50em;}
+}
+
+@media only screen and (min-width: 1500px) {
+    .bilibili {height: 50em;max-width: 60em;}
+}
