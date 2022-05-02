@@ -196,7 +196,7 @@
                             &nbsp;
                             test3
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2022/05/01/test/">it is a test</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2022/05/01/test/">苹果免签</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -228,6 +228,15 @@
                      </ul> 
                     </li> 
                      </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            分发网站
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2022/05/02/%E5%88%86%E5%8F%91%E7%BD%91%E7%AB%99/">1、搭建教程</a></li>  </ul> 
                     </li> 
                      </ul> 
     </div>
@@ -301,6 +310,110 @@
 </aside>
             
             <section id="main">
+        <article id="post-分发网站" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E5%88%86%E5%8F%91%E7%BD%91%E7%AB%99/">分发网站</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%88%86%E5%8F%91%E7%BD%91%E7%AB%99/" rel="tag">分发网站</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2022/05/02/%E5%88%86%E5%8F%91%E7%BD%91%E7%AB%99/">
+            <time datetime="2022-05-02T14:01:29.000Z" itemprop="datePublished">2022-05-02</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/xxxxxxx/Wiki-site/raw/writing/source/_posts/分发网站.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/xxxxxxx/Wiki-site/edit/writing/source/_posts/分发网站.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/xxxxxxx/Wiki-site/commits/writing/source/_posts/分发网站.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2022/05/02/%E5%88%86%E5%8F%91%E7%BD%91%E7%AB%99/">1、搭建教程</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h4 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a><font color=red>搭建环境</font></h4><p>推荐Nginx+php5.6+mysql+域名（需配置开启SSL）</p>
+<h4 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a><font color=red>上传文件</font></h4><p>上传压缩包文件，导入数据库文件。</p>
+<h4 id="配置伪静态"><a href="#配置伪静态" class="headerlink" title="配置伪静态"></a><font color=red>配置伪静态</font></h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!-d <span class="variable">$request_filename</span>)&#123;</span><br><span class="line">	set <span class="variable">$rule_0</span> <span class="number">1</span><span class="variable">$rule_0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (!-f <span class="variable">$request_filename</span>)&#123;</span><br><span class="line">	set <span class="variable">$rule_0</span> <span class="number">2</span><span class="variable">$rule_0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$rule_0</span> = <span class="string">&quot;21&quot;</span>)&#123;</span><br><span class="line">	rewrite ^/([a-z0-<span class="number">9</span>A-Z]+)$ /app.php/$<span class="number">1</span> last;</span><br><span class="line">    rewrite ^/user/([a-z|A-z|<span class="number">0</span>-<span class="number">9</span>]+)$ /index.php/$<span class="number">1</span> last;</span><br><span class="line">	rewrite ^/user/([a-z|A-z|<span class="number">0</span>-<span class="number">9</span>]+)/([a-z|A-z|<span class="number">0</span>-<span class="number">9</span>]+)$ /index.php/$<span class="number">1</span>/$<span class="number">2</span> last;</span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
+
+<h4 id="码支付配置"><a href="#码支付配置" class="headerlink" title="码支付配置"></a><font color=red>码支付配置</font></h4><p>修改数据库路径：\codepay\codepay_config.php</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/2022/05/02/%E5%88%86%E5%8F%91%E7%BD%91%E7%AB%99/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -453,7 +566,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2022/05/01/test/">it is a test</a>
+            <a class="article-title" href="/2022/05/01/test/">苹果免签</a>
         </h1>
     
 
@@ -485,7 +598,7 @@
                     
                     <p><p><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color=red>我是红色在写blog时,想高亮某些字,但是发现markdown更改字体颜色不像word里那么方便,于是查了一下,要用一下代码进行更改字体颜色,还可以更改字体大小,还有字体格式</font><br><font color=#008000>我是绿色</font><br><font color=Blue>我是蓝色</font><br><font size=5>我是尺寸</font><br><font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font></p>
 <h2 id="点击这里观看视频教程"><a href="#点击这里观看视频教程" class="headerlink" title="点击这里观看视频教程"></a><a target="_blank" rel="noopener" href="https://xw.qq.com/amphtml/20220502A01HU900"><font color=red>点击这里观看视频教程</font></a></h2><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p><img src="https://123.txb.kim/ceshi.png"><br>test:</p>
-<iframe class="bilibili" style="display:block; margin: auto;"  src="https://player.youku.com/embed/XNDA1NTEyMjg3Mg==" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe class="bilibili" style="display:block; margin: auto;"  src="//player.bilibili.com/player.html?aid=426214358&bvid=BV1M3411T7tT&cid=590125061&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <p>又送王孙去，萋萋满别情。</p>
 <p>
