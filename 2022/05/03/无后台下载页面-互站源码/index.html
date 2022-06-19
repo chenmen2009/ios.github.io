@@ -9,15 +9,15 @@
         <meta name="keywords" content="互站源码" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="1.源码介绍本源码是一款同时支持安卓和苹果手机二合一下载，带有控制后台可以随时修改前端页面，完全有用户自定义控制前端页面显示，苹果端下载页面支持免签描述文件下载，同时支持一键跳转信任下载页面，避免用户手动设置信任。 2.功能介绍★源码中有店主原创录制的详细视频安装和使用教程（小白一样可以学会使用）。  ★网站自适应PC+手机自适应（适配市面上主流手机，包括安卓和苹果）。  ★此网站带有后台，方便用">
+    <meta name="description" content="演示地址：https:&#x2F;&#x2F;ios9152.gitee.io&#x2F;chenmen&#x2F;1.源码介绍本源码为单页面静态下载页面源码，无后台功能，支持apk，ipa，ios描述文件上传分发下载，源码全开源，无授权加密，不限制域名、IP使用。2.安装环境PHP5.6（或者以上） + Nginx&#x2F;Apache2.4 + 无需数据库（推荐使用宝塔面板，虚拟主机请自己测试是否可以使用。） 此源码经过店主优化与">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1.2无后台下载页面">
 <meta property="og:url" content="https://chenmen2009.github.io/2022/05/03/%E6%97%A0%E5%90%8E%E5%8F%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2-%E4%BA%92%E7%AB%99%E6%BA%90%E7%A0%81/index.html">
 <meta property="og:site_name" content="我的互站源码库">
-<meta property="og:description" content="1.源码介绍本源码是一款同时支持安卓和苹果手机二合一下载，带有控制后台可以随时修改前端页面，完全有用户自定义控制前端页面显示，苹果端下载页面支持免签描述文件下载，同时支持一键跳转信任下载页面，避免用户手动设置信任。 2.功能介绍★源码中有店主原创录制的详细视频安装和使用教程（小白一样可以学会使用）。  ★网站自适应PC+手机自适应（适配市面上主流手机，包括安卓和苹果）。  ★此网站带有后台，方便用">
+<meta property="og:description" content="演示地址：https:&#x2F;&#x2F;ios9152.gitee.io&#x2F;chenmen&#x2F;1.源码介绍本源码为单页面静态下载页面源码，无后台功能，支持apk，ipa，ios描述文件上传分发下载，源码全开源，无授权加密，不限制域名、IP使用。2.安装环境PHP5.6（或者以上） + Nginx&#x2F;Apache2.4 + 无需数据库（推荐使用宝塔面板，虚拟主机请自己测试是否可以使用。） 此源码经过店主优化与">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-05-03T14:01:29.000Z">
-<meta property="article:modified_time" content="2022-06-19T02:31:15.404Z">
+<meta property="article:modified_time" content="2022-06-19T15:15:32.964Z">
 <meta property="article:author" content="91521">
 <meta property="article:tag" content="互站源码">
 <meta name="twitter:card" content="summary">
@@ -346,20 +346,19 @@
             
                 <div id="toc" class="toc-article">
                 <strong class="toc-title">目录</strong>
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%BA%90%E7%A0%81%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">1.源码介绍</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"><span class="toc-number"></span> <span class="toc-text">2.功能介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%A7%86%E9%A2%91%E6%BC%94%E7%A4%BA%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">3.视频演示（前端）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%A7%86%E9%A2%91%E6%BC%94%E7%A4%BA%EF%BC%88%E5%90%8E%E7%AB%AF%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">4.视频演示（后端）</span></a>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9Ahttps-ios9152-gitee-io-chenmen"><span class="toc-number">1.</span> <span class="toc-text">演示地址：https:&#x2F;&#x2F;ios9152.gitee.io&#x2F;chenmen&#x2F;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%BA%90%E7%A0%81%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text">1.源码介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%AC%E6%BA%90%E7%A0%81%E4%B8%BA%E5%8D%95%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2%E6%BA%90%E7%A0%81%EF%BC%8C%E6%97%A0%E5%90%8E%E5%8F%B0%E5%8A%9F%E8%83%BD%EF%BC%8C%E6%94%AF%E6%8C%81apk%EF%BC%8Cipa%EF%BC%8Cios%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%86%E5%8F%91%E4%B8%8B%E8%BD%BD%EF%BC%8C%E6%BA%90%E7%A0%81%E5%85%A8%E5%BC%80%E6%BA%90%EF%BC%8C%E6%97%A0%E6%8E%88%E6%9D%83%E5%8A%A0%E5%AF%86%EF%BC%8C%E4%B8%8D%E9%99%90%E5%88%B6%E5%9F%9F%E5%90%8D%E3%80%81IP%E4%BD%BF%E7%94%A8%E3%80%82"><span class="toc-number">2.1.</span> <span class="toc-text">本源码为单页面静态下载页面源码，无后台功能，支持apk，ipa，ios描述文件上传分发下载，源码全开源，无授权加密，不限制域名、IP使用。</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83"><span class="toc-number"></span> <span class="toc-text">2.安装环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"><span class="toc-number"></span> <span class="toc-text">3.功能介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%A7%86%E9%A2%91%E6%BC%94%E7%A4%BA%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">3.视频演示（前端）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%A7%86%E9%A2%91%E6%BC%94%E7%A4%BA%EF%BC%88%E5%90%8E%E7%AB%AF%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">4.视频演示（后端）</span></a>
                 </div>
             
         
         
-            <h4 id="1-源码介绍"><a href="#1-源码介绍" class="headerlink" title="1.源码介绍"></a><strong><font color=red>1.源码介绍</font></strong></h4><p><strong>本源码是一款同时支持安卓和苹果手机二合一下载，带有控制后台可以随时修改前端页面，完全有用户自定义控制前端页面显示，苹果端下载页面支持免签描述文件下载，同时支持一键跳转信任下载页面，避免用户手动设置信任。</strong></p>
-<h3 id="2-功能介绍"><a href="#2-功能介绍" class="headerlink" title="2.功能介绍"></a><strong><font color=red>2.功能介绍</font></strong></h3><p><strong><font color=Blue>★源码中有店主原创录制的详细视频安装和使用教程（小白一样可以学会使用）。</font></strong></p>
-<p> ★网站自适应PC+手机自适应（适配市面上主流手机，包括安卓和苹果）。</p>
-<p> ★此网站带有后台，方便用户随时更新网址（包括图标，标题，详情页介绍，APP下载地址等内容）。</p>
-<p> ★源码无任何加密授权，支持绑定域名或者IP使用，不限制绑定数量。</p>
-<p>…更多功能展示看演示站，源码搭建出来效果与演示站一样的。</p>
-<h3 id="3-视频演示（前端）"><a href="#3-视频演示（前端）" class="headerlink" title="3.视频演示（前端）"></a><strong><font color=red>3.视频演示（前端）</font></strong></h3><iframe class="bilibili" style="display:block; margin: auto;"  src="//player.bilibili.com/player.html?aid=470027431&bvid=BV1VT411G7Ys&cid=748644315&page=1" allowfullscreen=" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+            <h4 id="演示地址：https-ios9152-gitee-io-chenmen"><a href="#演示地址：https-ios9152-gitee-io-chenmen" class="headerlink" title="演示地址：https://ios9152.gitee.io/chenmen/"></a><strong>演示地址：</strong><a target="_blank" rel="noopener" href="https://ios9152.gitee.io/chenmen/">https://ios9152.gitee.io/chenmen/</a></h4><h4 id="1-源码介绍"><a href="#1-源码介绍" class="headerlink" title="1.源码介绍"></a><strong><font color=red>1.源码介绍</font></strong></h4><h5 id="本源码为单页面静态下载页面源码，无后台功能，支持apk，ipa，ios描述文件上传分发下载，源码全开源，无授权加密，不限制域名、IP使用。"><a href="#本源码为单页面静态下载页面源码，无后台功能，支持apk，ipa，ios描述文件上传分发下载，源码全开源，无授权加密，不限制域名、IP使用。" class="headerlink" title="本源码为单页面静态下载页面源码，无后台功能，支持apk，ipa，ios描述文件上传分发下载，源码全开源，无授权加密，不限制域名、IP使用。"></a>本源码为单页面静态下载页面源码，无后台功能，支持apk，ipa，ios描述文件上传分发下载，源码全开源，无授权加密，不限制域名、IP使用。</h5><h3 id="2-安装环境"><a href="#2-安装环境" class="headerlink" title="2.安装环境"></a><strong><font color=red>2.安装环境</font></strong></h3><p><strong>PHP5.6（或者以上） + Nginx&#x2F;Apache2.4 + 无需数据库（推荐使用宝塔面板，虚拟主机请自己测试是否可以使用。）</strong></p>
+<p><strong>此源码经过店主优化与测试，搭建有演示站，支持先测试后购买，诚信经营，欢迎咨询</strong></p>
+<h3 id="3-功能介绍"><a href="#3-功能介绍" class="headerlink" title="3.功能介绍"></a><strong><font color=red>3.功能介绍</font></strong></h3><p><strong><font color=Blue>★源码中有店主原创录制的详细视频安装和使用教程（小白一样可以学会使用）。</font></strong></p>
+<p> <strong>★网站自适应PC+手机自适应（适配市面上主流手机，包括安卓和苹果）。</strong></p>
+<p> <strong>★源码无任何加密授权，支持绑定域名或者IP使用，不限制绑定数量。</strong></p>
+<h3 id="3-视频演示（前端）"><a href="#3-视频演示（前端）" class="headerlink" title="3.视频演示（前端）"></a><strong><font color=red>3.视频演示（前端）</font></strong></h3><iframe class="bilibili" style="display:block; margin: auto;"  src="//player.bilibili.com/player.html?aid=727509514&bvid=BV1rS4y1e7ju&cid=750550243&page=1" allowfullscreen=" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<h3 id="4-视频演示（后端）"><a href="#4-视频演示（后端）" class="headerlink" title="4.视频演示（后端）"></a><strong><font color=red>4.视频演示（后端）</font></strong></h3><iframe class="bilibili" style="display:block; margin: auto;"  src="//player.bilibili.com/player.html?aid=215068211&bvid=BV1ma411s7nZ&cid=748641973&page=1" allowfullscreen=" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<h3 id="4-视频演示（后端）"><a href="#4-视频演示（后端）" class="headerlink" title="4.视频演示（后端）"></a><strong><font color=red>4.视频演示（后端）</font></strong></h3><iframe class="bilibili" style="display:block; margin: auto;"  src="//player.bilibili.com/player.html?aid=982569730&bvid=BV1pt4y1h71u&cid=750575974&page=1" allowfullscreen=" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
 
